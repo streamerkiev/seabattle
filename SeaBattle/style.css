@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#play-again-button {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    display: none;
+    width: 100px;
+    height: 40px;
+    margin-left: -50px;
+}
+.main-wrapper {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+#cta {
+    width: 30%;
+    min-height: 21px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    background-color: aliceblue;
+}
+.central-wrapper {
+    max-width: 1280px;
+    margin: 20px auto;
+    padding: 0 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.fields-label-wrapper {
+    display: none;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+}
+.fields-label-wrapper span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.your-field-label {
+    padding-left: 180px;
+}
+.opponent-field-label {
+    float: right;
+    padding-right: 138px;
+}
+.placement-instructions {
+    display: block;
+    padding: 5px 20px;
+    font-size: 13px;
+    text-align: center;
+}
+.ships-to-place {
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+.ships-to-place-row {
+    margin: 30px 10px 0 0;
+    width: 80%;
+    height: 34px;
+    overflow: hidden;
+}
+.ships-to-place-column {
+    float: left;
+    height: 34px;
+    overflow: hidden;
+}
+.two-columns {
+    width: 50%;
+}
+.three-columns {
+    width: 33%;
+}
+.four-columns {
+    width: 25%;
+}
+.ships-to-place .ship {
+    float: left;
+}
+.ship {
+    position: absolute;
+    height: 30px;
+    border: 2px solid #00ab1a;
+    background-color: rgba(0,171,26,0.1);
+}
+.oppShip {
+    position: absolute;
+    display: none;
+    height: 30px;
+}
+.ship-four-deck {
+    width: 123px;
+}
+.ship-three-deck {
+    width: 92px;
+}
+.ship-two-deck {
+    width: 61px;
+}
+.ship-one-deck {
+    width: 30px;
+}
+.battlefield-wrapper {
+    margin: 30px;
+    overflow: hidden;
+}
+.my-battlefield-wrapper {
+    float: left;
+    overflow: visible;
+}
+.opponents-battlefield-wrapper {
+    position: relative;
+    display: none;
+    float: right;
+    overflow: visible;
+}
+#oppBattlefieldDisabler {
+    position: absolute;
+    top: 19px;
+    left: 25px;
+    display: none;
+    width: 311px;
+    height: 310px;
+    background-color: rgba(140,140,140,0.1);
+}
+.battlefield {
+    float: left;
+    width: 311px;
+}
+.battlefield-col-letter {
+    margin-left: 25px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+.battlefield-col-letter span {
+    float: left;
+    display: block;
+    width: 31px;
+    text-align: center;
+    font-size: 12px;
+    color: green;
+}
+.battlefield-r-number {
+    float: left;
+    padding-right: 7px;
+    width: 18px;
+    text-align: right;
+}
+.battlefield-r-number span {
+    display: block;
+    padding-top: 7px;
+    height: 24px;
+    font-size: 12px;
+    color: green;
+}
+.battlefield-row {
+    width: 100%;
+    margin-top: -1px;
+    overflow: hidden;
+    border-top: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+}
+.battlefield-column {
+    width: 30px;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+}
+.disabled {
+    background-color: #cecece;
+}
+.buttons-set {
+    clear: both;
+}
+.buttons-set button {
+    margin: 20px 10px;
+    padding: 5px;
+}
+.log-wrapper {
+    clear: both;
+    display: none;
+    width: 100%;
+}
+.log-wrapper h3 {
+    text-align: center;
+}
+#log {
+    margin: 0 auto;
+    padding: 10px 15px;
+    width: 40%;
+    height: 200px;
+    max-height: 200px;
+    background-color: aliceblue;
+    overflow-y: scroll;
+}
+#log > span {
+    display: block;
+    padding: 2px 0;
+    font-size: 11px;
+}
+#log > span span {
+    padding-left: 10px;
+    font-size: 13px;
+}
+.missed {
+    background: url("images/missed.png") center center no-repeat;
+}
+.shot {
+    background: url("images/shot.png") center center no-repeat;
+}
+.destroyed {
+    display: block;
+    border: 2px solid black !important;
+    background: url("images/destroyed.jpg") top left;
+}

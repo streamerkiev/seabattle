@@ -1,0 +1,375 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Sea Battle</title>
+    </head>
+    <body>
+    <button id="play-again-button">Play again</button>
+        <div class="main-wrapper">
+            <h1>Sea Battle</h1>
+            <div id="cta">Place your ships</div>
+            <div class="central-wrapper">
+                <div class="fields-label-wrapper on-start-show">
+                    <span class="your-field-label">Your field</span>
+                    <span class="opponent-field-label">Opponent's field</span>
+                </div>
+                <div class="ships-to-place on-start-hide">
+                    <span class="placement-instructions">Place your ships on the battlefield. Click on a ship to turn it.</span>
+                    <div class="ships-to-place-row">
+                        <div class="ship ship-four-deck"></div>
+                    </div>
+                    <div class="ships-to-place-row">
+                        <div class="ships-to-place-column two-columns">
+                            <div class="ship ship-three-deck"></div>
+                        </div>
+                        <div class="ships-to-place-column two-columns">
+                            <div class="ship ship-three-deck"></div>
+                        </div>
+                    </div>
+                    <div class="ships-to-place-row">
+                        <div class="ships-to-place-column three-columns">
+                            <div class="ship ship-two-deck"></div>
+                        </div>
+                        <div class="ships-to-place-column three-columns">
+                            <div class="ship ship-two-deck"></div>
+                        </div>
+                        <div class="ships-to-place-column three-columns">
+                            <div class="ship ship-two-deck"></div>
+                        </div>
+                    </div>
+                    <div class="ships-to-place-row">
+                        <div class="ships-to-place-column four-columns">
+                            <div class="ship ship-one-deck"></div>
+                        </div>
+                        <div class="ships-to-place-column four-columns">
+                            <div class="ship ship-one-deck"></div>
+                        </div>
+                        <div class="ships-to-place-column four-columns">
+                            <div class="ship ship-one-deck"></div>
+                        </div>
+                        <div class="ships-to-place-column four-columns">
+                            <div class="ship ship-one-deck"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="battlefield-wrapper my-battlefield-wrapper">
+                    <div class="battlefield-col-letter">
+                        <span>A</span>
+                        <span>B</span>
+                        <span>C</span>
+                        <span>D</span>
+                        <span>E</span>
+                        <span>F</span>
+                        <span>G</span>
+                        <span>H</span>
+                        <span>I</span>
+                        <span>J</span>
+                    </div>
+                    <div class="battlefield-r-number">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div id="myBattlefield" class="battlefield">
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="battlefield-wrapper opponents-battlefield-wrapper on-start-show">
+                    <div id="oppBattlefieldDisabler"></div>
+                    <div class="battlefield-col-letter">
+                        <span>A</span>
+                        <span>B</span>
+                        <span>C</span>
+                        <span>D</span>
+                        <span>E</span>
+                        <span>F</span>
+                        <span>G</span>
+                        <span>H</span>
+                        <span>I</span>
+                        <span>J</span>
+                    </div>
+                    <div class="battlefield-r-number">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div id="opponentsBattlefield" class="battlefield">
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                        <div class="battlefield-row">
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                            <div class="battlefield-column"></div>
+                        </div>
+                    </div>
+                    <div class="oppShip ship-four-deck"></div>
+                    <div class="oppShip ship-three-deck"></div>
+                    <div class="oppShip ship-three-deck"></div>
+                    <div class="oppShip ship-two-deck"></div>
+                    <div class="oppShip ship-two-deck"></div>
+                    <div class="oppShip ship-two-deck"></div>
+                    <div class="oppShip ship-one-deck"></div>
+                    <div class="oppShip ship-one-deck"></div>
+                    <div class="oppShip ship-one-deck"></div>
+                    <div class="oppShip ship-one-deck"></div>
+                </div>
+                <div class="buttons-set on-start-hide">
+                    <button type="button" id="reload-button">Reload</button>
+                    <button type="button" id="auto-place-button">Place ships automatically</button>
+                    <button type="button" id="start-button">Start the game</button>
+                </div>
+            </div>
+            <div class="log-wrapper on-start-show">
+                <h3>Log:</h3>
+                <div id="log"></div>
+            </div>
+        </div>
+    <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

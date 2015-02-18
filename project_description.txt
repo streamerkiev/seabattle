@@ -1,0 +1,45 @@
+The aim of this project was to create a singleton sea battle game. The key features requested were:
+
+    ability to drag & drop ships on the field;
+    ability to turn ship at 90 degrees by clicking it;
+    ability to place ships on the field automatically and randomly;
+    play the game with AI;
+    log events with different colors;
+    perform the task with native JS.
+
+The game is built by the classical rules, there are one 4-decked ship, two 3-decked ships,
+three 2-decked ships and four 1-decked ships. Ships can be dragged and dropped on the battlefield,
+in case they are dropped not on the battlefield or on forbidden place, they are returned to the previous
+state. If a ship is being dragged on the battlefield, it sticks to the battlefield grid for player's
+convenience. If a ship is being dragged on forbidden place which is a place occupied by some other ship
+or a place next to other ship, the drop of dragged ship is forbidden and player is informed by red
+highlighting of a ship. Ship placed on the battlefield can be turned at 90 degrees by a click. In case
+the turn will place the ship on the other ship or outside of the battlefield, this turn is forbidden
+and player is informed by red highlighting of a ship.
+
+By clicking a "Place ships automatically" button player can place all the ships on the battlefield
+randomly and automatically. Clicking this button again will result is another random placement of ships.
+The algorithm of auto-placement lets avoid placing ships on each other or next to other ship, it also
+randomizes the horizontal or vertical orientation of each ship.
+
+When all ships are placed on the battlefield, the game can be started, the "Start the game" button
+is activated and the CTA block is informing player. When the game is started, the log block and
+opponent's battlefield appear. Log traces the time of any action made and highlights messages with
+relevant color: black - when player's or opponent's shot misses any ship, green - when player shoots
+or destroys opponent's ship and wins the game, red - when opponent shoots or destroys player's ship
+and wins the game.The CTA block informs which turn is it and who wins the game. Firs turn is player's
+turn, player is able to choose which cell of opponent's field to shoot. Missed cells are marked
+with a dot, shot cells in ship are marked with a cross and destroyed ship is marked with black border
+and crosses on it's cells. When it's opponent's turn, the opponent's battlefield is disabled to shoot.
+The implementation of AI includes random choice of a cell to shoot and in case a ship is shot, finishing
+the ship. Finishing the ship includes an algorithm of choosing cells to shoot around the ship and is
+performed to minimize possibility to miss.
+
+When a ship is destroyed, all the cells around it are marked as missed so that player and AI avoid
+shooting them. By the way, when player shoots missed or already shot cell, nothing happens, only
+shooting a valid cell results in an action and turn changing.
+
+The game ends when the last player's or AI's ship is destroyed. A "Play again" button then appears
+between battlefields allowing to reload the page and start the game again from the very beginning.
+
+The game singleton is performed with native JS and is built with OOP paradigm.
